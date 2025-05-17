@@ -22,7 +22,7 @@ cniConfig:
 
 nodes:
   - hostname: "worker01"
-    ipAddress: "192.168.1.81"
+    ipAddress: "192.168.13.81"
     installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
@@ -33,7 +33,7 @@ nodes:
           hardwareAddr: "bc:24:11:02:d6:34"
         dhcp: false
         addresses:
-          - "192.168.1.81/24"
+          - "192.168.13.81/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "192.168.13.1"
@@ -41,7 +41,7 @@ nodes:
         vip:
           ip: "192.168.13.50"
   - hostname: "worker02"
-    ipAddress: "192.168.1.82"
+    ipAddress: "192.168.13.82"
     installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
@@ -52,13 +52,13 @@ nodes:
           hardwareAddr: "bc:24:11:91:cc:84"
         dhcp: false
         addresses:
-          - "192.168.1.82/24"
+          - "192.168.13.82/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "192.168.13.1"
         mtu: 1500
   - hostname: "worker03"
-    ipAddress: "192.168.1.84"
+    ipAddress: "192.168.13.84"
     installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
@@ -69,13 +69,13 @@ nodes:
           hardwareAddr: "bc:24:11:21:5f:ac"
         dhcp: false
         addresses:
-          - "192.168.1.84/24"
+          - "192.168.13.84/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "192.168.13.1"
         mtu: 1500
   - hostname: "control01"
-    ipAddress: "192.168.1.80"
+    ipAddress: "192.168.13.80"
     installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
@@ -86,7 +86,7 @@ nodes:
           hardwareAddr: "bc:24:11:ca:b4:31"
         dhcp: false
         addresses:
-          - "192.168.1.80/24"
+          - "192.168.13.80/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "192.168.13.1"
